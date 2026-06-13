@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TZ Gate Auto | ติดตั้งประตูรีโมท กล้องวงจรปิด ดิจิตอลล็อค ภาคอีสาน กาฬสินธุ์ อุดรธานี</title>
+  <meta name="description" content="รับติดตั้งประตูรีโมทอัตโนมัติ กล้องวงจรปิด CCTV ดิจิตอลล็อค ภาคอีสาน กาฬสินธุ์ มุกดาหาร นครพนม ขอนแก่น อุดรธานี หนองคาย บึงกาฬ อำนาจเจริญ ประสบการณ์ 10 ปี โทร 097-928-9163" />
+  <meta name="keywords" content="ประตูรีโมท,กล้องวงจรปิด,CCTV,ดิจิตอลล็อค,พัทยา,ชลบุรี,ระยอง,ติดตั้งประตูอัตโนมัติ,TZ Gate Auto" />
+  <meta property="og:title" content="TZ Gate Auto | ติดตั้งประตูรีโมท พัทยา ชลบุรี ระยอง" />
+  <meta property="og:description" content="รับติดตั้งประตูรีโมท กล้องวงจรปิด ดิจิตอลล็อค บริการครบวงจร ราคาดี โทรปรึกษาฟรี" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="th_TH" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --primary:      #0f4c81;
+      --primary-dark: #0a3560;
+      --primary-light:#e8f0fe;
+      --gold:         #f59e0b;
+      --gold-dark:    #d97706;
+      --green:        #06c755;
+      --green-dark:   #059a42;
+      --red:          #ef4444;
+      --gray-50:      #f8fafc;
+      --gray-100:     #f1f5f9;
+      --gray-200:     #e2e8f0;
+      --gray-400:     #94a3b8;
+      --gray-600:     #475569;
+      --gray-800:     #1e293b;
+      --white:        #ffffff;
+    }
+
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Sarabun', sans-serif;
+      background: var(--gray-50);
+      color: var(--gray-800);
+    }
+
+    .container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+
+    /* ── ANIMATIONS ── */
+    @keyframes fadeUp   { from{opacity:0;transform:translateY(24px)} to{opacity:1;transform:translateY(0)} }
+    @keyframes pulse-ring { 0%{transform:scale(1);opacity:.6} 100%{transform:scale(2.2);opacity:0} }
+    @keyframes pulse-dot  { 0%,100%{transform:scale(1)} 50%{transform:scale(1.2)} }
+    @keyframes shine { 0%{left:-80%} 100%{left:130%} }
+    @keyframes float { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-6px)} }
+
+    /* ── TOP BAR ── */
+    .topbar {
+      background: var(--primary-dark);
+      color: rgba(255,255,255,.75);
+      font-size: 13px;
+      text-align: center;
+      padding: 8px 16px;
+    }
+    .topbar b { color: #fbbf24; }
+
+    /* ── NAVBAR ── */
+    nav {
+      background: var(--white);
+      border-bottom: 2px solid var(--primary);
+      position: sticky; top: 0; z-index: 100;
+      box-shadow: 0 2px 12px rgba(0,0,0,.08);
+    }
+    .nav-wrap {
+      display: flex; align-items: center;
+      justify-content: space-between;
+      padding: 14px 20px; gap: 12px;
+    }
+    .nav-logo { display:flex; align-items:center; gap:10px; text-decoration:none; }
+    .nav-logo-box {
+      width:44px; height:44px; background:var(--primary);
+      border-radius:10px; display:flex; align-items:center; justify-content:center;
+      font-size:22px; color:#fff; flex-shrink:0;
+    }
+    .nav-brand { font-size:17px; font-weight:800; color:var(--primary-dark); line-height:1.1; }
+    .nav-sub   { font-size:11px; color:var(--gray-400); font-weight:500; }
+    .nav-actions { display:flex; gap:8px; flex-shrink:0; }
+    .btn {
+      display:inline-flex; align-items:center; gap:6px;
+      padding:9px 16px; border-radius:8px; font-family:'Sarabun',sans-serif;
+      font-size:14px; font-weight:700; text-decoration:none; cursor:pointer;
+      transition:filter .15s, transform .15s;
+    }
+    .btn:active { transform:scale(.97); }
+    .btn-blue  { background:var(--primary); color:#fff; }
+    .btn-green { background:var(--green); color:#fff; }
+    .btn-gold  { background:var(--gold); color:#fff; box-shadow:0 4px 16px rgba(245,158,11,.4); }
+    .btn-outline{ border:2px solid rgba(255,255,255,.6); color:#fff; background:transparent; }
+    .btn-lg    { padding:14px 28px; font-size:16px; border-radius:12px; }
+    @media(max-width:520px){ .btn span, .nav-sub { display:none; } .btn { padding:9px 12px; } }
+
+    /* ── HERO ── */
+    .hero {
+      background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 60%, #1a6fb5 100%);
+      padding: 56px 20px 48px;
+      position: relative; overflow: hidden;
+    }
+    .hero::before {
+      content:''; position:absolute; width:500px; height:500px; border-radius:50%;
+      background:rgba(255,255,255,.04); top:-200px; right:-150px; pointer-events:none;
+    }
+    .hero::after {
+      content:''; position:absolute; width:300px; height:300px; border-radius:50%;
+      background:rgba(255,255,255,.04); bottom:-100px; left:-80px; pointer-events:none;
+    }
+    .hero-inner {
+      display:grid; grid-template-columns:1fr 360px; gap:40px; align-items:center;
+      position:relative; z-index:1;
+    }
+    @media(max-width:820px){ .hero-inner{ grid-template-columns:1fr; } }
+
+    .hero-badge {
+      display:inline-flex; align-items:center; gap:6px;
+      background:rgba(255,255,255,.15); border:1px solid rgba(255,255,255,.3);
+      color:#fbbf24; font-size:13px; font-weight:600;
+      padding:6px 16px; border-radius:20px; margin-bottom:18px;
+      animation: fadeUp .5s ease both;
+    }
+    .hero h1 {
+      font-size:42px; font-weight:800; color:#fff; line-height:1.25;
+      margin-bottom:16px; animation:fadeUp .5s ease .1s both;
+    }
+    .hero h1 .hl { color:#fbbf24; }
+    .hero-sub {
+      font-size:17px; color:rgba(255,255,255,.8); line-height:1.7;
+      margin-bottom:28px; animation:fadeUp .5s ease .2s both;
+    }
+    .hero-btns { display:flex; gap:12px; flex-wrap:wrap; margin-bottom:32px; animation:fadeUp .5s ease .3s both; }
+
+    .hero-stats {
+      display:flex; gap:28px; flex-wrap:wrap;
+      animation:fadeUp .5s ease .4s both;
+    }
+    .stat-num { font-size:28px; font-weight:800; color:#fbbf24; }
+    .stat-lbl { font-size:13px; color:rgba(255,255,255,.7); }
+
+    @media(max-width:540px){ .hero h1{ font-size:30px; } }
+
+    /* ── HERO CARD ── */
+    .hero-card {
+      background:rgba(255,255,255,.1); backdrop-filter:blur(8px);
+      border:1px solid rgba(255,255,255,.2); border-radius:20px;
+      padding:24px; animation:fadeUp .6s ease .2s both;
+    }
+    .hero-card-title { font-size:14px; color:rgba(255,255,255,.7); font-weight:600; margin-bottom:16px; }
+    .hc-list { list-style:none; display:flex; flex-direction:column; gap:10px; }
+    .hc-item {
+      display:flex; align-items:center; gap:14px;
+      background:rgba(255,255,255,.1); border-radius:12px; padding:14px;
+      transition:background .2s; cursor:pointer; text-decoration:none; color:inherit;
+    }
+    .hc-item:hover { background:rgba(255,255,255,.18); }
+    .hc-icon {
+      width:42px; height:42px; background:rgba(255,255,255,.15);
+      border-radius:10px; display:flex; align-items:center; justify-content:center;
+      font-size:20px; color:#fbbf24; flex-shrink:0;
+    }
+    .hc-item strong { display:block; font-size:14px; color:#fff; }
+    .hc-item span   { font-size:12px; color:rgba(255,255,255,.65); }
+
+    /* ── LIVE STATUS ── */
+    .status-bar {
+      background:#f0fdf4; border-bottom:1px solid #bbf7d0;
+      display:flex; align-items:center; justify-content:center; gap:8px;
+      padding:10px 16px;
+    }
+    .dot-wrap { position:relative; width:12px; height:12px; flex-shrink:0; }
+    .dot  { position:absolute; inset:0; border-radius:50%; background:#22c55e; animation:pulse-dot 2s ease-in-out infinite; }
+    .ring { position:absolute; inset:0; border-radius:50%; background:#22c55e; animation:pulse-ring 2s ease-out infinite; }
+    .status-txt { font-size:14px; font-weight:600; color:#15803d; }
+
+    /* ── SECTION ── */
+    .sec { padding: 56px 20px; }
+    .sec-label {
+      display:inline-block; background:var(--primary-light); color:var(--primary);
+      font-size:12px; font-weight:700; letter-spacing:.8px; padding:4px 14px;
+      border-radius:20px; text-transform:uppercase; margin-bottom:12px;
+    }
+    .sec-title { font-size:30px; font-weight:800; color:var(--gray-800); margin-bottom:8px; }
+    .sec-sub   { font-size:16px; color:var(--gray-400); margin-bottom:36px; }
+    .sec-line  { width:44px; height:3px; background:var(--gold); border-radius:2px; margin:8px 0 36px; }
+
+    /* ── SERVICE GRID ── */
+    .svc-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:20px; }
+    .svc-card {
+      background:var(--white); border:1.5px solid var(--gray-200);
+      border-radius:18px; padding:28px 22px; text-align:center;
+      transition:border-color .2s, box-shadow .2s, transform .2s;
+      cursor:pointer;
+    }
+    .svc-card:hover {
+      border-color:var(--primary);
+      box-shadow:0 8px 32px rgba(15,76,129,.12);
+      transform:translateY(-6px);
+    }
+    .svc-icon {
+      width:64px; height:64px; border-radius:16px; background:var(--primary-light);
+      display:flex; align-items:center; justify-content:center;
+      font-size:28px; color:var(--primary); margin:0 auto 16px;
+    }
+    .svc-card h3 { font-size:17px; font-weight:700; color:var(--gray-800); margin-bottom:8px; }
+    .svc-card p  { font-size:13px; color:var(--gray-400); line-height:1.7; }
+    .svc-tag {
+      display:inline-block; margin-top:12px;
+      background:var(--primary-light); color:var(--primary);
+      font-size:11px; font-weight:600; padding:3px 10px; border-radius:20px;
+    }
+
+    /* ── WHY US ── */
+    .sec-alt { background:var(--gray-50); }
+    .why-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:16px; }
+    .why-item {
+      display:flex; align-items:flex-start; gap:14px;
+      background:var(--white); border:1px solid var(--gray-200);
+      border-radius:14px; padding:18px 16px;
+      transition:border-color .2s, box-shadow .2s;
+    }
+    .why-item:hover { border-color:var(--primary); box-shadow:0 4px 16px rgba(15,76,129,.08); }
+    .why-ico {
+      width:46px; height:46px; min-width:46px;
+      border-radius:12px; background:var(--primary-light);
+      display:flex; align-items:center; justify-content:center;
+      font-size:22px; color:var(--primary);
+    }
+    .why-txt strong { display:block; font-size:14px; font-weight:700; color:var(--gray-800); }
+    .why-txt span   { font-size:12px; color:var(--gray-400); }
+
+    /* ── PROMO ── */
+    .promo-card {
+      background: linear-gradient(135deg, var(--primary-dark), var(--primary));
+      border-radius:24px; padding:36px 32px;
+      position:relative; overflow:hidden;
+      box-shadow:0 16px 48px rgba(15,76,129,.3);
+    }
+    .promo-card::before {
+      content:''; position:absolute; width:300px; height:300px; border-radius:50%;
+      background:rgba(255,255,255,.05); top:-100px; right:-80px;
+    }
+    .hot-badge {
+      position:absolute; top:20px; right:20px;
+      background:var(--red); color:#fff;
+      font-size:11px; font-weight:800; letter-spacing:1px;
+      padding:5px 12px; border-radius:6px; text-transform:uppercase;
+    }
+    .promo-eyebrow { font-size:13px; color:rgba(255,255,255,.7); margin-bottom:10px; }
+    .promo-title { font-size:26px; font-weight:800; color:#fff; line-height:1.3; margin-bottom:20px; }
+    .promo-title span { color:#fbbf24; }
+    .promo-items { display:flex; flex-direction:column; gap:10px; margin-bottom:24px; }
+    .promo-item {
+      display:flex; align-items:center; gap:10px;
+      background:rgba(255,255,255,.1); border-radius:10px; padding:12px 16px;
+    }
+    .promo-item i { color:#fbbf24; font-size:16px; flex-shrink:0; }
+    .promo-item span { font-size:14px; color:#fff; }
+    .promo-cta {
+      position:relative; overflow:hidden;
+      display:inline-flex; align-items:center; gap:8px;
+      background:var(--gold); color:#fff;
+      font-size:17px; font-weight:800;
+      padding:14px 32px; border-radius:50px;
+      text-decoration:none;
+      box-shadow:0 4px 20px rgba(245,158,11,.5);
+      animation:float 3s ease-in-out infinite;
+    }
+    .promo-cta::after {
+      content:''; position:absolute;
+      top:0; left:-80%; width:60%; height:100%;
+      background:linear-gradient(120deg,transparent,rgba(255,255,255,.35),transparent);
+      transform:skewX(-20deg); animation:shine 2.5s ease-in-out infinite;
+    }
+
+    /* ── CTA SECTION ── */
+    .cta-sec {
+      background:linear-gradient(135deg, var(--primary-dark), var(--primary));
+      padding:56px 20px; text-align:center;
+    }
+    .cta-sec h2 { font-size:30px; font-weight:800; color:#fff; margin-bottom:10px; }
+    .cta-sec p  { font-size:16px; color:rgba(255,255,255,.8); margin-bottom:32px; }
+    .cta-btns   { display:flex; gap:14px; justify-content:center; flex-wrap:wrap; }
+    .cta-card {
+      display:flex; align-items:center; gap:14px;
+      background:rgba(255,255,255,.1); border:1px solid rgba(255,255,255,.2);
+      border-radius:14px; padding:16px 24px; text-decoration:none; color:#fff;
+      transition:background .2s, transform .15s;
+      min-width:220px;
+    }
+    .cta-card:hover { background:rgba(255,255,255,.2); transform:translateY(-3px); }
+    .cta-card-icon { font-size:28px; flex-shrink:0; }
+    .cta-card-label{ font-size:11px; opacity:.7; }
+    .cta-card-val  { font-size:18px; font-weight:800; }
+
+    /* ── MOTOR GALLERY ── */
+    .mgal-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:16px; }
+    .mgal-card {
+      background:var(--white); border:1.5px solid var(--gray-200);
+      border-radius:16px; overflow:hidden;
+      transition:transform .2s, box-shadow .2s; cursor:pointer;
+    }
+    .mgal-card:hover { transform:translateY(-4px); box-shadow:0 8px 28px rgba(0,0,0,.12); }
+    .mgal-card img { width:100%; height:220px; object-fit:cover; display:block; transition:transform .3s; }
+    .mgal-card:hover img { transform:scale(1.04); }
+    .mgal-cap { padding:12px 16px 14px; background:var(--primary-light); border-top:2px solid var(--primary); }
+    .mgal-cap strong { display:block; font-size:14px; font-weight:700; color:var(--primary-dark); }
+    .mgal-cap span   { font-size:12px; color:var(--gray-600); }
+    .glb { display:none; position:fixed; inset:0; background:rgba(0,0,0,.92); z-index:999; align-items:center; justify-content:center; }
+    .glb.open { display:flex; }
+    .glb img { max-width:92vw; max-height:86vh; object-fit:contain; border-radius:10px; }
+    .glb-close { position:absolute; top:16px; right:20px; background:none; border:none; color:#fff; font-size:30px; cursor:pointer; }
+    .glb-prev, .glb-next { position:absolute; top:50%; transform:translateY(-50%); background:rgba(255,255,255,.15); border:none; color:#fff; font-size:22px; padding:12px 16px; border-radius:8px; cursor:pointer; }
+    .glb-prev { left:12px; } .glb-next { right:12px; }
+
+    /* ── AREA ── */
+    .area-list { display:flex; flex-wrap:wrap; gap:10px; }
+    .area-tag {
+      display:inline-flex; align-items:center; gap:6px;
+      background:var(--primary-light); color:var(--primary);
+      font-size:14px; font-weight:600;
+      padding:8px 18px; border-radius:50px;
+      border:1px solid #bfdbfe;
+    }
+
+    /* ── FOOTER ── */
+    footer {
+      background:var(--gray-800); color:rgba(255,255,255,.6);
+      text-align:center; padding:32px 20px 40px; font-size:13px; line-height:1.9;
+    }
+    .foot-logo { font-size:18px; font-weight:800; color:#fff; margin-bottom:6px; }
+    footer a { color:rgba(255,255,255,.6); text-decoration:none; }
+    footer a:hover { color:#fff; }
+    .foot-tags { display:flex; flex-wrap:wrap; gap:6px; justify-content:center; margin:14px 0; }
+    .foot-tag {
+      font-size:11px; color:rgba(255,255,255,.4);
+      background:rgba(255,255,255,.06); border-radius:20px; padding:3px 10px;
+    }
+
+    /* ── STICKY BAR ── */
+    .sticky {
+      position:fixed; bottom:0; left:0; right:0;
+      display:flex; z-index:200;
+      box-shadow:0 -2px 20px rgba(0,0,0,.15);
+    }
+    .st-btn {
+      flex:1; display:flex; align-items:center; justify-content:center; gap:8px;
+      padding:15px; font-family:'Sarabun',sans-serif;
+      font-size:16px; font-weight:700; color:#fff; text-decoration:none;
+      transition:filter .15s;
+    }
+    .st-btn:active { filter:brightness(.9); }
+    .st-call { background:var(--primary); }
+    .st-line { background:var(--green); }
+
+    body { padding-bottom: 56px; }
+
+    @media(max-width:480px){
+      .hero h1 { font-size:26px; }
+      .sec-title { font-size:24px; }
+      .promo-title { font-size:20px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- TOP BAR -->
+<div class="topbar">
+  บริการครบวงจร ภาคอีสาน 11 จังหวัด &nbsp;·&nbsp; <b>โทรฟรี ปรึกษาได้ทุกวัน</b> &nbsp;·&nbsp; เปิด 08:00–18:00 น.
+</div>
+
+<!-- NAVBAR -->
+<nav>
+  <div class="nav-wrap container">
+    <a href="/" class="nav-logo">
+      <div class="nav-logo-box"><i class="fas fa-door-open"></i></div>
+      <div>
+        <div class="nav-brand">TZ Gate Auto</div>
+        <div class="nav-sub">ประตูรีโมทฮีสานบ้านเฮา</div>
+      </div>
+    </a>
+    <div class="nav-actions">
+      <a href="https://line.me/R/ti/p/%40205wicyf" target="_blank" rel="noopener" class="btn btn-green" onclick="trackLine()">
+        <i class="fab fa-line"></i><span>Line: @205wicyf</span>
+      </a>
+      <a href="tel:0979289163" class="btn btn-blue" onclick="trackCall()">
+        <i class="fas fa-phone"></i><span>097-928-9163</span>
+      </a>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="container hero-inner">
+    <div>
+      <div class="hero-badge"><i class="fas fa-award"></i> ประสบการณ์กว่า 10 ปี</div>
+      <h1>รับติดตั้ง<span class="hl">ประตูรีโมท</span><br/>กล้อง &amp; ระบบ<br/>รักษาความปลอดภัย</h1>
+      <p class="hero-sub">
+        บริการครบวงจร ภาคอีสาน 11 จังหวัด<br/>
+        ออกแบบ ติดตั้ง ซ่อม รับประกันงาน ราคาดีสุด
+      </p>
+      <div class="hero-btns">
+        <a href="tel:0979289163" class="btn btn-gold btn-lg" onclick="trackCall()">
+          <i class="fas fa-phone-volume"></i> โทรได้เลย ปรึกษาฟรี
+        </a>
+        <a href="https://line.me/R/ti/p/%40205wicyf" target="_blank" rel="noopener" class="btn btn-outline btn-lg" onclick="trackLine()">
+          <i class="fab fa-line"></i> แชท LINE
+        </a>
+      </div>
+      <div class="hero-stats">
+        <div><div class="stat-num">10+</div><div class="stat-lbl">ปีประสบการณ์</div></div>
+        <div><div class="stat-num">500+</div><div class="stat-lbl">งานที่ผ่านมา</div></div>
+        <div><div class="stat-num">11</div><div class="stat-lbl">จังหวัดให้บริการ</div></div>
+      </div>
+    </div>
+
+    <div class="hero-card">
+      <div class="hero-card-title">บริการหลักของเรา</div>
+      <ul class="hc-list">
+        <li class="hc-item">
+          <div class="hc-icon"><i class="fas fa-door-open"></i></div>
+          <div>
+            <strong>ประตูรีโมทอัตโนมัติ</strong>
+            <span>บ้าน โกดัง โรงงาน ทุกขนาด</span>
+          </div>
+        </li>
+        <li class="hc-item">
+          <div class="hc-icon"><i class="fas fa-video"></i></div>
+          <div>
+            <strong>กล้องวงจรปิด CCTV</strong>
+            <span>HD, IP Cam, WiFi, ดูผ่านมือถือ</span>
+          </div>
+        </li>
+        <li class="hc-item">
+          <div class="hc-icon"><i class="fas fa-lock"></i></div>
+          <div>
+            <strong>ดิจิตอลล็อค</strong>
+            <span>สแกนนิ้ว, สแกนหน้า, รหัส, บัตร</span>
+          </div>
+        </li>
+        <li class="hc-item">
+          <div class="hc-icon"><i class="fab fa-apple"></i></div>
+          <div>
+            <strong>Smart Home / HomeKit</strong>
+            <span>ระบบบ้านอัจฉริยะ ควบคุมผ่านมือถือ</span>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- STATUS -->
+<div class="status-bar">
+  <div class="dot-wrap"><div class="ring"></div><div class="dot"></div></div>
+  <span class="status-txt">เปิดให้บริการทุกวัน 08:00–18:00 น. โทรได้เลยค่ะ</span>
+</div>
+
+<!-- SERVICES -->
+<section class="sec">
+  <div class="container">
+    <div class="sec-label">OUR SERVICES</div>
+    <h2 class="sec-title">บริการของเรา</h2>
+    <div class="sec-line"></div>
+    <div class="svc-grid">
+
+      <div class="svc-card">
+        <div class="svc-icon"><i class="fas fa-door-open"></i></div>
+        <h3>ประตูรีโมทอัตโนมัติ</h3>
+        <p>ประตูบ้าน โกดัง โรงงาน ทุกขนาด<br/>ทั้งบานเลื่อน บานสวิง บานพับ</p>
+        <span class="svc-tag">ติดตั้งวันเดียวเสร็จ</span>
+      </div>
+
+      <div class="svc-card">
+        <div class="svc-icon"><i class="fas fa-video"></i></div>
+        <h3>กล้องวงจรปิด CCTV</h3>
+        <p>กล้อง HD, IP Cam, WiFi<br/>ดูย้อนหลังผ่านมือถือได้ทุกที่</p>
+        <span class="svc-tag">ดูออนไลน์ได้ 24 ชม.</span>
+      </div>
+
+      <div class="svc-card">
+        <div class="svc-icon"><i class="fas fa-lock"></i></div>
+        <h3>ดิจิตอลล็อค</h3>
+        <p>สแกนนิ้วมือ สแกนหน้า รหัส<br/>การ์ด และแอปมือถือ</p>
+        <span class="svc-tag">ไม่ต้องใช้กุญแจ</span>
+      </div>
+
+      <div class="svc-card">
+        <div class="svc-icon"><i class="fab fa-apple"></i></div>
+        <h3>Smart Home / Matter</h3>
+        <p>ระบบบ้านอัจฉริยะ Apple HomeKit<br/>สั่งงานด้วยเสียง ตั้งเวลาอัตโนมัติ</p>
+        <span class="svc-tag">HomeKit / Matter</span>
+      </div>
+
+      <div class="svc-card">
+        <div class="svc-icon"><i class="fas fa-tools"></i></div>
+        <h3>ซ่อมและบำรุงรักษา</h3>
+        <p>ซ่อมประตูอัตโนมัติ กล้อง ล็อค<br/>รับประกันงานและอะไหล่</p>
+        <span class="svc-tag">รับประกันงาน</span>
+      </div>
+
+      <div class="svc-card">
+        <div class="svc-icon"><i class="fas fa-bolt"></i></div>
+        <h3>ระบบไฟฟ้า &amp; อินเทอร์คอม</h3>
+        <p>ติดตั้งระบบอินเทอร์คอม วิดีโอโดม<br/>ระบบเปิด-ปิดประตูอัตโนมัติ</p>
+        <span class="svc-tag">ครบวงจร</span>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- WHY US -->
+<section class="sec sec-alt">
+  <div class="container">
+    <div class="sec-label">WHY US</div>
+    <h2 class="sec-title">ทำไมต้องเลือก TZ Gate Auto</h2>
+    <div class="sec-line"></div>
+    <div class="why-grid">
+      <div class="why-item">
+        <div class="why-ico"><i class="fas fa-medal"></i></div>
+        <div class="why-txt">
+          <strong>ประสบการณ์ 10+ ปี</strong>
+          <span>ช่างมืออาชีพ ผลงานมากกว่า 500 งาน</span>
+        </div>
+      </div>
+      <div class="why-item">
+        <div class="why-ico"><i class="fas fa-tags"></i></div>
+        <div class="why-txt">
+          <strong>ราคาดี ไม่มีบวกเพิ่ม</strong>
+          <span>เสนอราคาฟรี ไม่มีค่าใช้จ่ายซ่อน</span>
+        </div>
+      </div>
+      <div class="why-item">
+        <div class="why-ico"><i class="fas fa-shield-alt"></i></div>
+        <div class="why-txt">
+          <strong>รับประกันงาน 1 ปี</strong>
+          <span>อะไหล่และค่าแรง ซ่อมฟรีตามเงื่อนไข</span>
+        </div>
+      </div>
+      <div class="why-item">
+        <div class="why-ico"><i class="fas fa-clock"></i></div>
+        <div class="why-txt">
+          <strong>บริการรวดเร็ว</strong>
+          <span>นัดวันติดตั้งได้ทันที เสร็จวันเดียว</span>
+        </div>
+      </div>
+      <div class="why-item">
+        <div class="why-ico"><i class="fas fa-map-marker-alt"></i></div>
+        <div class="why-txt">
+          <strong>ครอบคลุม 3 จังหวัด</strong>
+          <span>พัทยา ชลบุรี ระยอง บริการถึงที่</span>
+        </div>
+      </div>
+      <div class="why-item">
+        <div class="why-ico"><i class="fas fa-headset"></i></div>
+        <div class="why-txt">
+          <strong>บริการหลังการขาย</strong>
+          <span>ติดตามงาน ดูแลต่อเนื่อง ตอบไวทาง LINE</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROMO -->
+<section class="sec">
+  <div class="container">
+    <div class="sec-label">PROMOTION</div>
+    <h2 class="sec-title">โปรโมชั่นพิเศษ</h2>
+    <div class="sec-line"></div>
+    <div class="promo-card">
+      <div class="hot-badge">HOT DEAL 🔥</div>
+      <div class="promo-eyebrow">แพ็กเกจยอดนิยม · ประหยัดสุดคุ้ม</div>
+      <div class="promo-title">แพ็กเกจ<span>ประตูรีโมท + กล้อง</span><br/>ราคาพิเศษ</div>
+      <div class="promo-items">
+        <div class="promo-item"><i class="fas fa-check-circle"></i><span>ประตูรีโมทบานเลื่อน + มอเตอร์</span></div>
+        <div class="promo-item"><i class="fas fa-check-circle"></i><span>กล้อง CCTV 4 ตัว พร้อม DVR</span></div>
+        <div class="promo-item"><i class="fas fa-check-circle"></i><span>ติดตั้งและตั้งค่าระบบทั้งหมด</span></div>
+        <div class="promo-item"><i class="fas fa-check-circle"></i><span>รับประกัน 1 ปี อะไหล่ + ค่าแรง</span></div>
+      </div>
+      <a href="tel:0979289163" class="promo-cta" onclick="trackCall()">
+        <i class="fas fa-phone-volume"></i> สอบถามราคาเดี๋ยวนี้
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- MOTOR GALLERY -->
+<section class="sec sec-alt">
+  <div class="container">
+    <div class="sec-label">PRODUCTS &amp; GALLERY</div>
+    <h2 class="sec-title">มอเตอร์และผลงานติดตั้ง</h2>
+    <div class="sec-line"></div>
+    <div class="mgal-grid">
+      <div class="mgal-card" onclick="gOpen(0)">
+        <img src="images/gate-motor.jpg" alt="มอเตอร์ประตูรีโมทบานเลื่อน" loading="lazy">
+        <div class="mgal-cap"><strong>มอเตอร์บานเลื่อน</strong><span>ติดตั้งได้ทุกขนาด รับประกัน 1 ปี</span></div>
+      </div>
+      <div class="mgal-card" onclick="gOpen(1)">
+        <img src="images/motor-swing.jpg" alt="มอเตอร์บานสวิง บานพับ" loading="lazy">
+        <div class="mgal-cap"><strong>มอเตอร์บานสวิง / บานพับ</strong><span>ไฮดรอลิค และสปริงอาร์ม</span></div>
+      </div>
+      <div class="mgal-card" onclick="gOpen(2)">
+        <img src="images/autodoor-motor.jpg" alt="มอเตอร์ประตูอัตโนมัติ" loading="lazy">
+        <div class="mgal-cap"><strong>มอเตอร์ประตูอัตโนมัติ</strong><span>ประตูกระจก ประตูอะลูมิเนียม</span></div>
+      </div>
+      <div class="mgal-card" onclick="gOpen(3)">
+        <img src="images/autodoor-glass.jpg" alt="ประตูกระจกอัตโนมัติ" loading="lazy">
+        <div class="mgal-cap"><strong>ประตูกระจกอัตโนมัติ</strong><span>มอเตอร์บานเลื่อน พร้อมเซ็นเซอร์</span></div>
+      </div>
+      <div class="mgal-card" onclick="gOpen(4)">
+        <img src="images/swing-gate.jpg" alt="ประตูบานสวิง" loading="lazy">
+        <div class="mgal-cap"><strong>ประตูบานสวิง</strong><span>มอเตอร์บานสวิง ทน แข็งแรง</span></div>
+      </div>
+      <div class="mgal-card" onclick="gOpen(5)">
+        <img src="images/garage-door.jpg" alt="ประตูโรงรถอัตโนมัติ" loading="lazy">
+        <div class="mgal-cap"><strong>ประตูโรงรถอัตโนมัติ</strong><span>มอเตอร์ม้วน รีโมทไร้สาย</span></div>
+      </div>
+      <div class="mgal-card" onclick="gOpen(6)">
+        <img src="images/nd1000-rse.jpg" alt="มอเตอร์ ND1000 RSE" loading="lazy">
+        <div class="mgal-cap"><strong>ND1000 RSE</strong><span>มอเตอร์คุณภาพสูง เงียบ ทนทาน</span></div>
+      </div>
+      <div class="mgal-card" onclick="gOpen(7)">
+        <img src="images/nd1000-rse-1.jpg" alt="ND1000 RSE ชุดติดตั้ง" loading="lazy">
+        <div class="mgal-cap"><strong>ND1000 RSE ชุดติดตั้ง</strong><span>ครบชุด รีโมท รับสัญญาณ</span></div>
+      </div>
+      <div class="mgal-card" onclick="gOpen(8)">
+        <img src="images/motor-rse-2.jpg" alt="มอเตอร์ RSE" loading="lazy">
+        <div class="mgal-cap"><strong>มอเตอร์ RSE</strong><span>รุ่นยอดนิยม แรงดึงสูง</span></div>
+      </div>
+      <div class="mgal-card" onclick="gOpen(9)">
+        <img src="images/motor-rdmt-rse.png" alt="มอเตอร์ RDMT RSE" loading="lazy">
+        <div class="mgal-cap"><strong>มอเตอร์ RDMT / RSE</strong><span>เหมาะประตูหนัก โกดัง โรงงาน</span></div>
+      </div>
+      <div class="mgal-card" onclick="gOpen(10)">
+        <img src="images/install-autodoor-1.jpg" alt="ผลงานติดตั้งประตูอัตโนมัติ" loading="lazy">
+        <div class="mgal-cap"><strong>ผลงานติดตั้ง</strong><span>ประตูอัตโนมัติจริง</span></div>
+      </div>
+      <div class="mgal-card" onclick="gOpen(11)">
+        <img src="images/install-01.jpg" alt="ผลงานติดตั้ง 1" loading="lazy">
+        <div class="mgal-cap"><strong>ผลงานติดตั้ง #1</strong><span>บริการถึงที่ ทุกจังหวัด</span></div>
+      </div>
+      <div class="mgal-card" onclick="gOpen(12)">
+        <img src="images/install-02.jpg" alt="ผลงานติดตั้ง 2" loading="lazy">
+        <div class="mgal-cap"><strong>ผลงานติดตั้ง #2</strong><span>ช่างมืออาชีพ เสร็จไว</span></div>
+      </div>
+      <div class="mgal-card" onclick="gOpen(13)">
+        <img src="images/install-03.jpg" alt="ผลงานติดตั้ง 3" loading="lazy">
+        <div class="mgal-cap"><strong>ผลงานติดตั้ง #3</strong><span>รับประกันงาน 1 ปี</span></div>
+      </div>
+      <div class="mgal-card" onclick="gOpen(14)">
+        <img src="images/install-04.jpg" alt="ผลงานติดตั้ง 4" loading="lazy">
+        <div class="mgal-cap"><strong>ผลงานติดตั้ง #4</strong><span>บ้าน หมู่บ้าน โกดัง</span></div>
+      </div>
+      <div class="mgal-card" onclick="gOpen(15)">
+        <img src="images/install-05.jpg" alt="ผลงานติดตั้ง 5" loading="lazy">
+        <div class="mgal-cap"><strong>ผลงานติดตั้ง #5</strong><span>ติดตั้งวันเดียวเสร็จ</span></div>
+      </div>
+      <div class="mgal-card" onclick="gOpen(16)">
+        <img src="images/install-06.jpg" alt="ผลงานติดตั้ง 6" loading="lazy">
+        <div class="mgal-cap"><strong>ผลงานติดตั้ง #6</strong><span>ทีมช่างประสบการณ์ 10 ปี</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="glb" id="glb">
+  <button class="glb-close" onclick="gClose()">✕</button>
+  <button class="glb-prev" onclick="gNav(-1)">&#8249;</button>
+  <img id="glb-img" src="" alt="" style="transition:opacity .1s">
+  <button class="glb-next" onclick="gNav(1)">&#8250;</button>
+</div>
+<script>
+var gImgs=[
+  'images/gate-motor.jpg','images/motor-swing.jpg','images/autodoor-motor.jpg',
+  'images/autodoor-glass.jpg','images/swing-gate.jpg','images/garage-door.jpg',
+  'images/nd1000-rse.jpg','images/nd1000-rse-1.jpg','images/motor-rse-2.jpg',
+  'images/motor-rdmt-rse.png','images/install-autodoor-1.jpg',
+  'images/install-01.jpg','images/install-02.jpg','images/install-03.jpg',
+  'images/install-04.jpg','images/install-05.jpg','images/install-06.jpg'
+];
+var gCur=0;
+function gOpen(i){gCur=i;document.getElementById('glb-img').src=gImgs[i];document.getElementById('glb').classList.add('open');document.body.style.overflow='hidden';}
+function gClose(){document.getElementById('glb').classList.remove('open');document.body.style.overflow='';document.getElementById('glb-img').src='';}
+function gNav(d){gCur=(gCur+d+gImgs.length)%gImgs.length;var img=document.getElementById('glb-img');img.style.opacity=0;setTimeout(function(){img.src=gImgs[gCur];img.style.opacity=1;},100);}
+document.getElementById('glb').addEventListener('click',function(e){if(e.target===this)gClose();});
+document.addEventListener('keydown',function(e){if(!document.getElementById('glb').classList.contains('open'))return;if(e.key==='ArrowLeft')gNav(-1);if(e.key==='ArrowRight')gNav(1);if(e.key==='Escape')gClose();});
+</script>
+
+<!-- SERVICE AREA -->
+<section class="sec sec-alt">
+  <div class="container">
+    <div class="sec-label">SERVICE AREA</div>
+    <h2 class="sec-title">พื้นที่ให้บริการ</h2>
+    <div class="sec-line"></div>
+    <div class="area-list">
+      <span class="area-tag"><i class="fas fa-map-marker-alt"></i> กาฬสินธุ์</span>
+      <span class="area-tag"><i class="fas fa-map-marker-alt"></i> มุกดาหาร</span>
+      <span class="area-tag"><i class="fas fa-map-marker-alt"></i> นครพนม</span>
+      <span class="area-tag"><i class="fas fa-map-marker-alt"></i> ขอนแก่น</span>
+      <span class="area-tag"><i class="fas fa-map-marker-alt"></i> อุดรธานี</span>
+      <span class="area-tag"><i class="fas fa-map-marker-alt"></i> หนองคาย</span>
+      <span class="area-tag"><i class="fas fa-map-marker-alt"></i> บึงกาฬ</span>
+      <span class="area-tag"><i class="fas fa-map-marker-alt"></i> อำนาจเจริญ</span>
+      <span class="area-tag"><i class="fas fa-map-marker-alt"></i> ท่าอุเทน</span>
+      <span class="area-tag"><i class="fas fa-map-marker-alt"></i> หนองบัวลำภู</span>
+      <span class="area-tag"><i class="fas fa-map-marker-alt"></i> เลย</span>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-sec">
+  <div class="container">
+    <h2>ติดต่อเราได้เลยวันนี้</h2>
+    <p>ปรึกษาฟรี! เสนอราคาฟรี! ไม่มีค่าใช้จ่าย</p>
+    <div class="cta-btns">
+      <a href="tel:0979289163" class="cta-card" onclick="trackCall()">
+        <div class="cta-card-icon">📞</div>
+        <div>
+          <div class="cta-card-label">โทรสอบถาม / ปรึกษาฟรี</div>
+          <div class="cta-card-val">097-928-9163</div>
+        </div>
+      </a>
+      <a href="https://line.me/R/ti/p/%40205wicyf" target="_blank" rel="noopener" class="cta-card" onclick="trackLine()">
+        <div class="cta-card-icon">💬</div>
+        <div>
+          <div class="cta-card-label">แชท LINE ตอบไว</div>
+          <div class="cta-card-val">@205wicyf</div>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="foot-logo">TZ Gate Auto ประตูรีโมทฮีสานบ้านเฮา</div>
+  <div>📍 กาฬสินธุ์ มุกดาหาร นครพนม ขอนแก่น และอีสาน</div>
+  <div>📞 <a href="tel:0979289163">097-928-9163</a> &nbsp;·&nbsp; LINE: <a href="https://line.me/R/ti/p/%40205wicyf">@205wicyf</a></div>
+  <div class="foot-tags">
+    <span class="foot-tag">#TZGateAuto</span>
+    <span class="foot-tag">#ประตูรีโมท</span>
+    <span class="foot-tag">#กล้องวงจรปิด</span>
+    <span class="foot-tag">#CCTV</span>
+    <span class="foot-tag">#ดิจิตอลล็อค</span>
+    <span class="foot-tag">#กาฬสินธุ์</span>
+    <span class="foot-tag">#อุดรธานี</span>
+    <span class="foot-tag">#อีสาน</span>
+  </div>
+  <div style="font-size:11px;opacity:.4">© 2026 TZ Gate Auto · tzgateauto.com</div>
+</footer>
+
+<!-- STICKY BAR -->
+<div class="sticky">
+  <a href="tel:0979289163" class="st-btn st-call" onclick="trackCall()">
+    <i class="fas fa-phone"></i> โทรเลย
+  </a>
+  <a href="https://line.me/R/ti/p/%40205wicyf" target="_blank" rel="noopener" class="st-btn st-line" onclick="trackLine()">
+    <i class="fab fa-line"></i> LINE สอบถาม
+  </a>
+</div>
+
+<script>
+  function trackCall() {
+    if (typeof gtag !== 'undefined') {
+      gtag('event', 'conversion', { 'send_to': 'AW-XXXXXXXXX/XXXXXXXXXX' });
+      gtag('event', 'phone_click', { 'event_category': 'contact' });
+    }
+  }
+  function trackLine() {
+    if (typeof gtag !== 'undefined') {
+      gtag('event', 'line_click', { 'event_category': 'contact' });
+    }
+  }
+</script>
+
+</body>
+</html>
